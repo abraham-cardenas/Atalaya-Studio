@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Atalaya Studio - Diseño, desarrollo y soluciones digitales."
+    />
+
+    <title>Atalaya Studio | Soluciones digitales</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#inicio" class="logo" aria-label="Atalaya Studio - Inicio">
+        Atalaya Studio
+      </a>
+
+      <button
+        class="menu-button"
+        id="menuButton"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mainNavigation"
+        aria-label="Abrir menú"
+      >
+        ☰
+      </button>
+
+      <nav
+        class="navigation"
+        id="mainNavigation"
+        aria-label="Navegación principal"
+      >
+        <ul>
+          <li>
+            <a href="#inicio">Inicio</a>
+          </li>
+
+          <li>
+            <a href="#servicios">Servicios</a>
+          </li>
+
+          <li>
+            <a href="#proyectos">Proyectos</a>
+          </li>
+
+          <li>
+            <a href="#testimonios">Testimonios</a>
+          </li>
+
+          <li>
+            <a href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Diseño · Tecnología · Creatividad</p>
+
+          <h1>Creamos experiencias digitales que conectan marcas y personas</h1>
+
+          <p>
+            En Atalaya Studio desarrollamos soluciones digitales modernas,
+            accesibles y orientadas a las necesidades de nuestros clientes.
+          </p>
+
+          <a href="#contacto" class="button"> Hablemos de tu proyecto </a>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="assets/images/atalaya-hero.jpg"
+            alt="Equipo creativo trabajando en un proyecto digital"
+            width="800"
+            height="600"
+            fetchpriority="high"
+          />
+        </div>
+      </section>
+
+      <section id="servicios" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Lo que hacemos</p>
+
+          <h2>Servicios</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="card">
+            <h3>Diseño web</h3>
+            <p>Diseñamos interfaces modernas, accesibles y adaptables.</p>
+          </article>
+
+          <article class="card">
+            <h3>Desarrollo</h3>
+            <p>Construimos aplicaciones web eficientes y escalables.</p>
+          </article>
+
+          <article class="card">
+            <h3>Experiencia digital</h3>
+            <p>
+              Creamos experiencias centradas en las necesidades de los usuarios.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="proyectos" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Nuestro trabajo</p>
+
+          <h2>Proyectos destacados</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project">
+            <img
+              src="assets/images/proyecto-1.jpg"
+              alt="Diseño de una plataforma web empresarial"
+              width="600"
+              height="400"
+              loading="lazy"
+            />
+
+            <div>
+              <h3>Plataforma empresarial</h3>
+              <p>
+                Desarrollo de una solución digital para gestión empresarial.
+              </p>
+            </div>
+          </article>
+
+          <article class="project">
+            <img
+              src="assets/images/proyecto-2.jpg"
+              alt="Interfaz de una aplicación móvil"
+              width="600"
+              height="400"
+              loading="lazy"
+            />
+
+            <div>
+              <h3>Aplicación móvil</h3>
+              <p>Diseño de experiencia para dispositivos móviles.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section
+        id="testimonios"
+        class="section"
+        aria-labelledby="testimonios-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow">Clientes</p>
+          <h2 id="testimonios-title">Lo que dicen nuestros clientes</h2>
+        </div>
+
+        <div id="testimonialsContainer" aria-live="polite">
+          <p>Cargando testimonios...</p>
+        </div>
+      </section>
+
+      <section id="contacto" class="section contact-section">
+        <div class="section-heading">
+          <p class="eyebrow">Hablemos</p>
+
+          <h2>Cuéntanos sobre tu proyecto</h2>
+        </div>
+
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name"> Nombre </label>
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="name"
+              required
+              maxlength="80"
+            />
+
+            <span class="error" id="nameError" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email"> Correo electrónico </label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+              maxlength="120"
+            />
+
+            <span class="error" id="emailError" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message"> Mensaje </label>
+
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              maxlength="500"
+              required
+            ></textarea>
+
+            <span class="error" id="messageError" aria-live="polite"></span>
+          </div>
+
+          <button type="submit" class="button">Enviar mensaje</button>
+
+          <p id="formMessage" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Atalaya Studio. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
+x
